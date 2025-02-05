@@ -1,0 +1,13 @@
+<form (ngSubmit)="addTask()">
+    <input type="text" [(ngModel)]="taskName" name="taskName" placeholder="Nombre de la tarea">
+    <input type="text" [(ngModel)]="taskDescription" name="taskDescription" placeholder="Descripción">
+    <input type="date" [(ngModel)]="taskDate" name="taskDate">
+    <input type="time" [(ngModel)]="taskTime" name="taskTime">
+    <select [(ngModel)]="taskPriority" name="taskPriority">
+      <option value="baja">Baja</option>
+      <option value="media">Media</option>
+      <option value="alta">Alta</option>
+    </select>
+    <button type="submit">Agregar Tarea</button>
+  </form>
+  
